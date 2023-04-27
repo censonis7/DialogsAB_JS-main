@@ -5,24 +5,31 @@
 <h2>JavaScript</h2>
 
 <p>When adding a number and a string, JavaScript will treat the number as a string.</p>
-
+<!-- html komentars -->
 <p id="demo"></p>
 
+
 <script>
+    const DATI = 21
     var ms = Date.now();
     console.log(ms);
-    console.log(typeof(16));
-    console.log(typeof("Volvo"));
-    let x =16 + "Volvo";
-    console.log(x);
 
-    console.log(Paragrafa saturs pirms izmainam);
+    console.log("Mainīga dati vertiba -" + DATI +", datu tips -" + typeof(DATI));
+    console.log(typeof("Volvo"));
+    let x = DATI + "Volvo";
+    console.log(typeof(x));
+
+    console.log("Paragrafa saturs pirms izmainam");
     console.log(document.getElementById("demo").innerHTML);
 
     ms = Date.now();
     console.log(ms);
     document.getElementById("demo").innerHTML = x;
+console.log("Paragrafa saturs pēc izmainām:");
+console.log(document.getElementById("demo").innerHTML);
 
+ms=Date.now();
+console.log(ms);
 </script>
 
 </body>
