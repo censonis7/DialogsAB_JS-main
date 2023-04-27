@@ -9,8 +9,20 @@
 <p id="demo"></p>
 
 <script>
-let x = 16 + "Volvo";
-document.getElementById("demo").innerHTML = x;
+    var ms = Date.now();
+    console.log(ms);
+    console.log(typeof(16));
+    console.log(typeof("Volvo"));
+    let x =16 + "Volvo";
+    console.log(x);
+
+    console.log(Paragrafa saturs pirms izmainam);
+    console.log(document.getElementById("demo").innerHTML);
+
+    ms = Date.now();
+    console.log(ms);
+    document.getElementById("demo").innerHTML = x;
+
 </script>
 
 </body>
